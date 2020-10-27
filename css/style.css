@@ -15,16 +15,14 @@
 }
 
 .header{
-
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 60px;
+	padding: 20px 275px;
 }
 
 .header__title{
 	font: 28px /55px 'Avenir';
-	font-size: 28px;
 	color: var(--green-color);
 }
 
@@ -41,7 +39,7 @@
 }
 
 .header__nav:last-child{
-	margin: 0;
+	margin: 0 0 0 0;
 }
 
 .header__sign-in{
@@ -72,7 +70,7 @@
 .intro{
 	background: url('../img/BG.png') no-repeat center;
 	background-size: cover;
-	padding: 175px 60px 200px 60px;
+	padding: 175px 275px 200px 275px;
 }
 
 .intro__title{
@@ -108,7 +106,7 @@
 }
 
 .about{
-	padding: 65px 60px 51px 60px;
+	padding: 65px 275px 300px 275px;
 }
 
 .about__info{
@@ -144,7 +142,7 @@
 }
 
 .about__item--second{
-	padding: 300px 0 0 0;
+	padding: 265px 0 0 0;
 }
 
 .about__item--third{
@@ -196,14 +194,24 @@
 	color: var(--grey-color);;
 }
 
+.about__img-wrapper{
+	position: relative;
+ 	padding: 56% 0 0 0; 
+}
+
 .about__image{
 	border-radius: 12px;
 	background-color: #C4C4C4;
+	position: absolute;
+  	left: 0;
+ 	top: 0;
+  	width: 100%;
+ 	height: auto;
 }
 
 .story{
 	background-color: var(--dark-green);
-	padding: 130px  50px 130px 50px;
+	padding: 130px 230px 130px 230px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -212,7 +220,7 @@
 .story__title{
 	font: 700 50px /79px var(--Georgia);
 	color: #fff;
-	margin-bottom: 33px;
+	margin: 0 0 33px 0;
 }
 
 .story__desc{
@@ -234,27 +242,49 @@
 	transition: background-color .15s linear;
 }
 
+.story__promo{
+/*	width: 50%;
+	height: 20%;
+	position:relative;
+	padding: 56% 0 0 0;*/
+}
+
 .story__video{
-	border-radius: 16.3326px;
-	width: 876px;
+/*	position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: auto;*/
+	width: 856px;
 	height: 516px;
+	border-radius: 16px;
 	background-color: #C4C4C4;
-	position: relative;
 }
 
 .product{
 	display: flex;
 	justify-content: space-between;
-	padding: 120px 60px 150px;
+	padding: 120px 275px 255px 300px;
 	position: relative;
 }
 
 .product__example{
-	padding: 0 30px 0 0;
+	margin: 0 30px 0 0;
+	width: 50%;
+}
+
+.product__img-wrapper{
+	position: relative;
+	padding: 56% 0 0 0;
 }
 
 .product__img{
 	border-radius: 18px;
+	position: absolute;
+  	left: 0;
+  	top: 0;
+ 	width: 100%;
+ 	height: auto;
 }
 
 .product__sample{
@@ -264,11 +294,12 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	max-width: 296px;
+	width: 16%; /*296px;*/
+	/*height: 35%;*/
 	padding: 25px 57px;
 	position: absolute;
 	top: 462px;
-	left: 31px;
+	left: 275px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
@@ -354,7 +385,7 @@
 
 .footer{
 	background-color: var(--dark-green);
-	padding: 95px 60px;
+	padding: 95px 275px 95px 275px;
 }
 
 .footer__logo{

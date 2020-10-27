@@ -1,0 +1,38 @@
+@media (max-width: 1600px) {
+
+	.header{
+		padding: 20px 105px;
+	}
+	.intro{
+		padding: 175px 105px 200px 105px;
+	}
+	.about{
+		padding: 65px 105px 300px 105px;
+	}
+	.about__desc{
+		max-width: 580px;
+	}
+	.story{
+		padding: 130px 90px 130px 90px;
+	}
+	.story__video{
+		width: 686px;
+		height: 446px;
+	}
+	.product{
+		padding: 120px 105px 275px 140px;
+	}
+
+	.product__subtitle{
+		font-size: 45px;
+	}
+
+	.product__sample{
+		left: 105px;
+	}
+	.footer{
+		padding: 95px 105px 95px 105px;
+	}
+
+}
+
