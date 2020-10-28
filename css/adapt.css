@@ -3,6 +3,9 @@
 	.header{
 		padding: 20px 105px;
 	}
+	.header__nav{
+		margin: 0 52px 0 0;
+	}
 	.intro{
 		padding: 175px 105px 200px 105px;
 	}
@@ -22,11 +25,9 @@
 	.product{
 		padding: 120px 105px 275px 140px;
 	}
-
 	.product__subtitle{
 		font-size: 45px;
 	}
-
 	.product__sample{
 		left: 105px;
 	}
@@ -36,3 +37,140 @@
 
 }
 
+@media (max-width: 1024px){
+	.header{
+		padding: 20px 55px;
+	}
+	.header__nav{
+		margin: 0 35px 0 0;
+	}
+	.intro{
+		padding: 175px 55px 200px 55px;
+	}
+	.intro__text{
+		font-size: 45px;
+		line-height: 65px;
+	}
+	.intro__subtext{
+		font-size: 18px;
+		max-width: 330px;
+	}
+	.about{
+		padding: 65px 55px 300px 55px;
+	}
+	.about__info{
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+	}
+	.about__subtitle{
+		font-size: 45px;
+		line-height: 65px;
+	}
+	.about__example{
+		flex-wrap: wrap;
+	}
+	.about__item--first{
+		padding: 15px 0 0 0;
+	}
+	.about__item--second{
+		padding: 75px 0 0 0;
+	}
+	.about__item--third{
+		margin: 0 auto;
+		padding: 360px 0 0 0;
+	}
+	.story{
+		padding: 75px 70px 75px 70px;
+		flex-wrap: wrap;
+	}
+	.story__info{
+		margin: 0 auto 57px;
+		text-align: center;
+	}
+	.story__title{
+		font-size: 45px;
+		line-height: 60px;
+	}
+	.story__desc{
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.story__promo{
+		margin: 0 auto;
+	}
+	.story__video{
+		width: 900px;
+		height: 500px;
+	}
+	.product{
+		flex-wrap: wrap-reverse;
+		padding: 75px 55px 275px 90px;
+	}
+	.product__example{
+		margin: 0 auto;
+	}
+	.product__sample{
+		width: 29%;
+		top: 660px;
+		left: 135px;
+	}
+	.product__subtitle{
+		font-size: 45px;
+		line-height: 60px;
+	}
+	.product__info{
+		margin: 0 auto 40px;
+		text-align: center;
+
+	}
+	.footer{
+		padding: 95px 55px 95px 55px;
+	}
+
+}
+
+@media (max-width: 768px){
+	.header{
+		padding: 20px 35px;
+	}
+	.intro{
+		padding: 145px 35px 170px 35px;
+	}
+	.about{
+		padding: 65px 35px 300px 35px;
+	}
+	.about__example{
+		justify-content: center;
+	}
+	.about__item--second{
+		padding: 385px 0 0 0;
+	}
+	.about__item--third{
+		padding: 385px 0 0 0;
+	}
+	.story{
+		padding: 75px 50px 75px 50px;
+	}
+	.story__video{
+		width: 680px;
+		height: 400px;
+	}
+	.product{
+		padding: 75px 35px 275px 70px;
+	}
+	.product__sample{
+		top: 640px;
+		left: 130px;
+		padding: 20px 50px;
+	}
+	.product__client{
+		margin: 0 0 10px 0;
+	}
+	.product__item{
+		margin: 0 0 9px 0;
+	}
+	.footer{
+		padding: 75px 35px 75px 35px;
+	}
+}
