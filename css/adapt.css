@@ -25,9 +25,6 @@
 	.product{
 		padding: 120px 105px 275px 140px;
 	}
-	.product__subtitle{
-		font-size: 45px;
-	}
 	.product__sample{
 		left: 105px;
 	}
@@ -48,11 +45,9 @@
 		padding: 175px 55px 200px 55px;
 	}
 	.intro__text{
-		font-size: 45px;
 		line-height: 65px;
 	}
 	.intro__subtext{
-		font-size: 18px;
 		max-width: 330px;
 	}
 	.about{
@@ -64,17 +59,17 @@
 		justify-content: center;
 	}
 	.about__subtitle{
-		font-size: 45px;
 		line-height: 65px;
 	}
 	.about__example{
 		flex-wrap: wrap;
+		/*justify-content: space-around;*/
 	}
 	.about__item--first{
 		padding: 15px 0 0 0;
 	}
 	.about__item--second{
-		padding: 75px 0 0 0;
+		padding: 165px 0 0 0;
 	}
 	.about__item--third{
 		margin: 0 auto;
@@ -89,11 +84,9 @@
 		text-align: center;
 	}
 	.story__title{
-		font-size: 45px;
 		line-height: 60px;
 	}
 	.story__desc{
-		font-size: 18px;
 		line-height: 28px;
 	}
 	.story__promo{
@@ -116,7 +109,6 @@
 		left: 135px;
 	}
 	.product__subtitle{
-		font-size: 45px;
 		line-height: 60px;
 	}
 	.product__info{
@@ -131,7 +123,7 @@
 
 @media (max-width: 768px){
 	.header{
-		padding: 20px 35px;
+		padding: 20px 40px;
 		position: relative;
 	}
 	.header__burger{
@@ -176,10 +168,37 @@
 		margin: 0 0 0 0;
 	}
 	.intro{
-		padding: 145px 35px 170px 35px;
+		padding: 145px 40px 170px 40px;
+	}
+	.intro__text{
+		line-height: 55px;
+	}
+	.intro__subtext{
+		line-height: 35px;
+	}
+	.intro__btn{
+		padding: 19px 34px;
 	}
 	.about{
-		padding: 65px 35px 300px 35px;
+		padding: 55px 40px 300px 40px;
+	}
+	.about__step-name{
+		margin: 0 0 35px 0;
+	}
+	.about__subtitle{
+		margin: 10px;
+		line-height: 55px;
+	}
+	.about__desc-text{
+		padding: 0;
+		line-height: 35px;
+	}
+	.about__item--second > .about__step-name{
+		text-align: center;
+	}
+	.about__step-desc{
+		line-height: 35px;
+		margin: 0 0 30px 0;
 	}
 	.about__example{
 		justify-content: center;
@@ -188,22 +207,43 @@
 		padding: 385px 0 0 0;
 	}
 	.about__item--third{
-		padding: 385px 0 0 0;
+		padding: 345px 0 0 0;
 	}
 	.story{
-		padding: 75px 20px 75px 20px;
+		padding: 45px 30px 45px 30px;
+	}
+	.story__title {
+	    line-height: 55px;
+	    margin: 0 0 25px 0
+	}
+	.story__desc{
+		line-height: 35px;
+		margin: 0 0 30px 0;
+	}
+	.story__btn{
+		padding: 19px 34px;
 	}
 	.story__video{
 		width: 680px;
 		height: 400px;
 	}
 	.product{
-		padding: 75px 35px 275px 70px;
+		padding: 45px 40px 275px 70px;
+	}
+	.product__subtitle{
+		line-height: 55px;
+	}
+	.product__desc-text{
+		line-height: 35px;
+	}
+	.product__btn{
+		padding: 19px 34px;
 	}
 	.product__sample{
-		top: 640px;
-		left: 130px;
-		padding: 20px 50px;
+		top: 599px;
+    	left: 111px;
+    	width: 33%;
+		padding: 20px 30px;
 	}
 	.product__client{
 		margin: 0 0 10px 0;
@@ -212,13 +252,13 @@
 		margin: 0 0 9px 0;
 	}
 	.footer{
-		padding: 75px 35px 75px 35px;
+		padding: 75px 40px 75px 40px;
 	}
 }
 
 @media (max-width: 425px){
 	.header{
-		padding: 20px 15px;
+		padding: 20px 25px;
 	}
 	.header__menu{
 		opacity: 0;
@@ -239,31 +279,86 @@
  		visibility: visible;
 	}
 	.intro{
-		padding: 125px 15px 150px 15px;
+		padding: 125px 25px 150px 25px;
+	}
+	.intro__text{
+		line-height: 50px;
+	}
+	.intro__subtext{
+		line-height: 31px;
+	}
+	.intro__btn{
+		padding: 17px 32px;
 	}
 	.about{
-		padding: 65px 15px 300px 15px;
+		padding: 45px 25px 300px 25px;
 	}
 	.about br{
 		display: none;
 	}
+	.about__step-name{
+		margin: 0 0 35px 0;
+	}
+	.about__subtitle{
+		margin: 10px;
+		line-height: 50px;
+	}
+	.about__desc-text{
+		padding: 0;
+		line-height: 31px;
+	}
+	.about__item--second > .about__step-name{
+		text-align: center;
+	}
+	.about__step-desc{
+		line-height: 31px;
+		margin: 0 0 30px 0;
+	}
+	.about__item--third > .about__step-name:before{
+		top: -125px;
+	}
 	.story{
-		padding: 75px 5px 75px 5px;
+		padding: 40px 15px 40px 15px;
+	}
+	.story__info {
+  		margin: 0 auto 30px;
+	}
+	.story__title{
+		margin: 0 0 30px 0;
+	}
+	.story__title {
+	    line-height: 50px;
+	}
+	.story__desc{
+		line-height: 31px;
+		margin: 0 0 30px 0;
+	}
+	.story__btn{
+		padding: 17px 33px;
 	}
 	.story__video{
 		width: 370px;
 		height: 250px;
 	}
 	.product{
-		padding: 75px 15px 335px 15px;
+		padding: 40px 25px 335px 25px;
 	}
 	.product br{
 		display: none;
 	}
+	.product__subtitle{
+		line-height: 50px;
+	}
+	.product__desc-text{
+		line-height: 31px;
+	}
+	.product__btn{
+		padding: 17px 32px;
+	}
 	.product__sample{
-		width: 66%;
-		top: 730px;
-		left: 70px;
+		width: 58%;
+    	top: 590px;
+    	left: 87px;
 	}
 	.product__client{
 		margin: 0 0 5px 0;
@@ -272,13 +367,13 @@
 		margin: 0 0 6px 0;
 	}
 	.footer{
-		padding: 75px 15px 75px 15px;
+		padding: 75px 25px 75px 25px;
 	}
 }
 
 @media (max-width: 375px){
 	.header{
-		padding: 20px 10px;
+		padding: 20px 20px;
 	}
 	.header__menu{
 		opacity: 0;
@@ -298,21 +393,40 @@
 		opacity: 1;
  		visibility: visible;
 	}
-	.header__subtitle{
-		font-size: 40px;
-		line-height: 55px;
-	}
 	.intro{
-		padding: 125px 10px 150px 10px;
+		padding: 125px 20px 150px 20px;
+	}
+	.intro__text{
+		line-height: 47px;
+	}
+	.intro__subtext{
+		line-height: 30px;
+	}
+	.intro__btn{
+		padding: 17px 32px;
 	}
 	.about{
-		padding: 65px 10px 300px 10px;
+		padding: 45px 20px 300px 20px;
+	}
+	.about__subtitle{
+		margin: 10px;
+		line-height: 48px;
+	}
+	.about__desc-text{
+		padding: 0;
+		line-height: 30px;
+	}
+	.about__step-desc{
+		line-height: 30px;
 	}
 	.about__item--second{
 		padding: 355px 0 0 0;
 	}
 	.about__item--third{
 		padding: 355px 0 0 0;
+	}
+	.about__item--third > .about__step-name:before{
+		top: -129px;
 	}
 	.about__step-name{
 		margin: 0 0 15px 0;
@@ -321,41 +435,53 @@
 		margin: 0 0 20px 0;
 	}
 	.story{
-		padding: 55px 5px 55px 5px;
+		padding: 40px 10px 40px 10px;
 	}
 	.story__info {
   		margin: 0 auto 40px;
 	}
 	.story__title {
-	    font-size: 40px;
-	    line-height: 55px;
+	    line-height: 48px;
 	}
 	.story__desc{
+		line-height: 30px;
 		margin: 0 0 40px 0;
+	}
+	.story__btn{
+		padding: 17px 32px;
 	}
 	.story__video{
 		width: 350px;
 		height: 220px;
 	}
 	.product{
-		padding: 55px 10px 325px 10px;
+		padding: 25px 20px 325px 20px;
+	}
+	.product__subtitle{
+		line-height: 48px;
+	}
+	.product__desc-text{
+		line-height: 30px;
+	}
+	.product__btn{
+		padding: 17px 32px;
 	}
 	.product__info{
 		margin: 0 0 30px 0;
 	}
 	.product__sample {
-	    width: 75%;
-	    top: 785px;
-	    left: 45px;
+	    width: 64%;
+	    top: 590px;
+	    left: 64px;
 	}
 	.footer{
-		padding: 55px 10px 55px 10px;
+		padding: 55px 20px 55px 20px;
 	}
 }
 
 @media (max-width: 320px){
 	.header{
-		padding: 20px 5px;
+		padding: 20px 15px;
 	}
 	.header__menu{
 		opacity: 0;
@@ -376,47 +502,81 @@
  		visibility: visible;
 	}
 	.header__subtitle{
-		font-size: 40px;
 		line-height: 55px;
 	}
 	.intro{
-		padding: 125px 5px 150px 5px;
+		padding: 125px 15px 150px 15px;
+	}
+	.intro__text{
+		line-height: 40px;
+	}
+	.intro__subtext{
+		line-height: 27px;
+	}
+	.intro__btn{
+		padding: 15px 30px;
 	}
 	.about{
-		padding: 65px 5px 300px 5px;
+		padding: 40px 15px 300px 15px;
+	}
+	.about__subtitle{
+		margin: 10px;
+		line-height: 45px;
+	}
+	.about__desc-text{
+		padding: 0 0 0 0;
+		line-height: 27px;
+	}
+	.about__step-desc{
+		line-height: 27px;
 	}
 	.about__item--second > .about__step-name {
     	text-align: center;
 	}
+	.about__item--third > .about__step-name:before{
+		top: -127px;
+	}
 	.story{
-		padding: 55px 5px 55px 5px;
+		padding: 35px 15px 35px 15px;
 	}
 	.story__info {
   		margin: 0 auto 40px;
 	}
 	.story__title {
-	    font-size: 40px;
-	    line-height: 55px;
+	    line-height: 43px;
 	}
 	.story__desc{
+		line-height: 27px;
 		margin: 0 0 40px 0;
 	}
 	.story__video{
 		width: 285px;
 		height: 180px;
 	}
+	.story__btn{
+		padding: 15px 30px;
+	}
 	.product{
-		padding: 55px 5px 340px 5px;
+		padding: 55px 15px 340px 15px;
+	}
+	.product__subtitle{
+		line-height: 43px;
+	}
+	.product__desc-text{
+		line-height: 27px;
 	}
 	.product__info{
 		margin: 0 0 30px 0;
 	}
+	.product__btn{
+		padding: 15px 30px;
+	}
 	.product__sample {
-	    width: 75%;
-	    top: 785px;
+	    width: 74%;
+	    top: 585px;
 	    left: 45px;
 	}
 	.footer{
-		padding: 55px 5px 55px 5px;
+		padding: 55px 15px 55px 15px;
 	}
 }

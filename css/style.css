@@ -134,7 +134,7 @@
 
 .intro__text{
 	color: var(--green-color);
-	font: 700 65px /74px var(--Georgia);
+	font: 700 calc(30px + 35 * ((100vw - 320px) / (1920 - 320))) /74px var(--Georgia);
 }
 
 .intro__desc{
@@ -143,14 +143,14 @@
 
 .intro__subtext{
 	max-width: 420px;
-	font: 400 20px /30px var(--Lato);
+	font: 400 calc(14px + 6 * ((100vw - 320px) / (1920 - 320))) /30px var(--Lato);
 	color: var(--grey-color);
 }
 
 .intro__btn{
 	background-color: var(--green-color);
 	color: #fff;
-	font: 400 20px var(--Lato);
+	font: 400 calc(14px + 6 * ((100vw - 320px) / (1920 - 320))) var(--Lato);
 	border-radius: 4px;
 	padding: 20px 50px;
 }
@@ -172,12 +172,12 @@
 }
 
 .about__title{
-	font: 400 24px var(--Lato);
+	font: 400 calc(18px + 6 * ((100vw - 320px) / (1920 - 320))) var(--Lato);
 	margin: 0 0 20px 0;
 }
 
 .about__subtitle{
-	font: 700 50px /78px var(--Georgia);
+	font: 700 calc(28px + 22 * ((100vw - 320px) / (1920 - 320))) /78px var(--Georgia);
 	color: var(--green-color);
 }
 
@@ -186,7 +186,7 @@
 }
 
 .about__desc-text{
-	font: 400 20px /30px var(--Lato);
+	font: 400 calc(14px + 6 * ((100vw - 320px) / (1920 - 320))) /30px var(--Lato);
 	padding: 50px 0 0 0;
 	color: var(--grey-color);
 }
@@ -205,7 +205,7 @@
 }
 
 .about__step-name{
-	font: 700 30px var(--Georgia);
+	font: 700 calc(21px + 7 * ((100vw - 320px) / (1920 - 320))) var(--Georgia);
 	margin: 0 0 55px 0;
 	position: relative;
 	text-align: center;
@@ -244,7 +244,7 @@
 
 .about__step-desc{
 	max-width: 392px;
-	font: 400 20px  /30px var(--Lato);
+	font: 400 calc(14px + 6 * ((100vw - 320px) / (1920 - 320))) /30px var(--Lato);
 	margin: 0 0 60px 0;
 	color: var(--grey-color);;
 }
@@ -273,19 +273,19 @@
 }
 
 .story__title{
-	font: 700 50px /79px var(--Georgia);
+	font: 700 calc(28px + 22 * ((100vw - 320px) / (1920 - 320))) /79px var(--Georgia);
 	color: #fff;
 	margin: 0 0 33px 0;
 }
 
 .story__desc{
-	font: 400 25px /39px var(--Lato);
+	font: 400 calc(18px + 7 * ((100vw - 320px) / (1920 - 320))) /39px var(--Lato);
 	color: #fff;
 	margin: 0 0 57px 0;
 }
 
 .story__btn{
-	font: 400 20px /25px var(--Lato);
+	font: 400 calc(14px + 6 * ((100vw - 320px) / (1920 - 320))) /25px var(--Lato);
 	background-color: var(--green-color);
 	color: #fff;
 	padding: 20px 50px;
@@ -297,19 +297,7 @@
 	transition: background-color .15s linear;
 }
 
-.story__promo{
-/*	width: 50%;
-	height: 20%;
-	position:relative;
-	padding: 56% 0 0 0;*/
-}
-
 .story__video{
-/*	position:absolute;
-	top:0;
-	left:0;
-	width: 100%;
-	height: auto;*/
 	width: 856px;
 	height: 516px;
 	border-radius: 16px;
@@ -350,7 +338,6 @@
 	justify-content: center;
 	align-items: center;
 	width: 16%; /*296px;*/
-	/*height: 35%;*/
 	padding: 25px 57px;
 	position: absolute;
 	top: 462px;
@@ -363,7 +350,7 @@
 }
 
 .product__caption{
-	font: 700 15px /23px var(--Lato);
+	font: 700 calc(11px + 4 * ((100vw - 320px) / (1920 - 320))) /23px var(--Lato);
 	text-align: center;
 }
 
@@ -383,12 +370,12 @@
 }
 
 .product__first-name{
-	font: 700 12px /19px var(--Lato);
+	font: 700 calc(8px + 4 * ((100vw - 320px) / (1920 - 320))) /19px var(--Lato);
 	text-align: center;
 }
 
 .product__headline{
-	font: 700 16px /25px var(--Georgia);
+	font: 700 calc(12px + 4 * ((100vw - 320px) / (1920 - 320))) /25px var(--Georgia);
 	text-align: center;
 	margin: 0 0 16px 0;
 }
@@ -398,7 +385,7 @@
 }
 
 .product__item{
-	font: 400 11px /17px var(--Lato);
+	font: 400 calc(8px + 3 * ((100vw - 320px) / (1920 - 320))) /17px var(--Lato);
 	margin: 0 0 15px 0;
 }
 
@@ -407,19 +394,19 @@
 }
 
 .product__title{
-	font: 400 25px /39px var(--Lato);
+	font: 400 calc(18px + 7 * ((100vw - 320px) / (1920 - 320))) /39px var(--Lato);
 	color: var(--grey-color);
 	margin: 0 0 10px 0;
 }
 
 .product__subtitle{
-	font: 700 50px /79px var(--Georgia);
+	font: 700 calc(28px + 22 * ((100vw - 320px) / (1920 - 320))) /79px var(--Georgia);
 	color: var(--green-color);
 	margin: 0 0 20px 0;
 }
 
 .product__desc-text{
-	font: 400 20px /31px var(--Lato);
+	font: 400 calc(14px + 6 * ((100vw - 320px) / (1920 - 320))) /31px var(--Lato);
 	color: var(--grey-color);
 	margin: 0 0 40px 0;
 	max-width: 530px;
@@ -428,7 +415,7 @@
 .product__btn{
 	background-color: var(--green-color);
 	color: #fff;
-	font: 400 20px var(--Lato);
+	font: 400 calc(14px + 6 * ((100vw - 320px) / (1920 - 320))) var(--Lato);
 	border-radius: 4px;
 	padding: 20px 50px;
 }
@@ -457,7 +444,7 @@
 
 .footer__nav{
 	margin: 0 0 40px 0;
-	font: 400 25px /30px var(--Lato);
+	font: 400 calc(18px + 7 * ((100vw - 320px) / (1920 - 320))) /30px var(--Lato);
 	color: #fff;
 }
 
