@@ -18,12 +18,67 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 275px;
+	padding: 15px 275px;
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	z-index: 5;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .header__title{
 	font: 28px /55px 'Avenir';
 	color: var(--green-color);
+}
+
+.header__menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: calc(100% - 150px);
+}
+
+.header__burger{
+	display: none;
+	position: relative;
+	width: 30px;
+	height: 20px;
+}
+
+.header__burger:before, .header__burger:after, .header__burger span{
+	content: '';
+	background-color: var(--grey-color);
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	left: 0;
+	transition: all .2s ease;
+}
+
+.header__burger:before{
+	top: 0;
+}
+
+.header__burger span{
+	top: 9px;
+}
+
+.header__burger:after{
+	bottom: 0;
+}
+
+.header__burger.shown:before{
+	top: 9px;
+	transform: rotate(45deg);
+}
+
+.header__burger.shown span{
+	transform: scale(0);
+}
+
+.header__burger.shown:after{
+	bottom: 9px;
+	transform: rotate(-45deg);
 }
 
 .header__nav{
