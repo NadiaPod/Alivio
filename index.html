@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/tabicon.png" type="image/png">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/adapt.css">
@@ -11,9 +12,7 @@
 <body>
 	<div class="container">
 			<div class="header">
-				<div class="header__logo">
-					<p class="header__title">Alivio</p>
-				</div>
+				<a href="index.html" class="header__logo">Alivio</a>
 				<div class="header__burger">
 					<span></span>
 				</div>
@@ -25,26 +24,39 @@
 						<a href="#" class="header__nav">Pricing</a>
 					</div>
 					<div class="header__auth">
-						<a href="#" class="header__sign-in">Sign in</a>
+						<button class="header__sign-in">Sign in</button>
 						<button class="header__btn">Start Trial</button>
 					</div>
 				</div>
 			</div>
+			<div class="login">
+				<div class="login__header">
+					<p class="login__title">Sign In</p>
+					<div class="login__exit"></div>
+				</div>
+				<form action="logged.html" class="login__form">
+					<input type="text" class="login__field" id="login__fieldFirst" placeholder="Login" required pattern="(?=.*[a-zA-Z0-9]).{8,}">
+					<div class="login__requirements">Must be at least 8 charachers (latin letters or numbers)</div>
+					<input type="password" class="login__field" id="login__field--second" placeholder="Password" required pattern="(?=.*[a-zA-Z0-9]).{5,}">
+					<div class="login__requirements">Must be at least 5 characters (latin letters or numbers)</div>
+					<input type="submit" class="login__btn" value="Sign in">
+				</form>
+			</div>
 			<div class="intro">
 				<div class="intro__title">
-					<p class="intro__text">Be aware, <br> Manage well.</p>
+					Be aware, <br> Manage well.
 				</div>
-				<div class="intro__desc">
-					<p class="intro__subtext">Everyone experiences stress in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
-				</div>
+				<p class="intro__desc">
+					Everyone experiences stress in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.
+				</p>
 					<button class="intro__btn">Find Your Way</button>
 			</div>
 			<div class="about">
 				<div class="about__info">
 					<div class="about__header">
-						<p class="about__title">How it works</p>
-						<p class="about__subtitle">Understand & Release <br>
-							the stress in 3 steps</p>
+						<div class="about__subtitle">How it works</div>
+						<div class="about__title">Understand & Release <br>
+							the stress in 3 steps</div>
 					</div>
 					<div class="about__desc">
 						<p class="about__desc-text">
@@ -82,7 +94,7 @@
 			<div class="story">
 				<div class="story__info">
 					<div class="story__header">
-						<p class="story__title">Let's hear about <br> Kayla's success story</p>
+						<div class="story__title">Let's hear about <br> Kayla's success story</div>
 						<p class="story__desc">See how well Alivio works in a real customer’s life. </p>
 					</div>
 						<button class="story__btn">Let’s get started</button>
@@ -113,9 +125,9 @@
 				</div>
 				<div class="product__info">
 					<div class="product__header">
-						<p class="product__title">Our product</p>
-						<p class="product__subtitle">You tell us your stress,
-						<br>We make your diary</p>
+						<div class="product__subtitle">Our product</div>
+						<div class="product__title">You tell us your stress,
+						<br>We make your diary</div>
 					</div>
 					<div class="product__desc">
 						<p class="product__desc-text">
@@ -136,6 +148,6 @@
 				</div>
 			</div>
 	</div>
-	<script src="js/burger.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
