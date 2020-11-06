@@ -10,7 +10,7 @@
 	<title>Надя</title>
 </head>
 <body>
-	<div class="container">
+	   <div class="container">
 			<div class="header">
 				<a href="index.html" class="header__logo">Alivio</a>
 				<div class="header__burger">
@@ -30,25 +30,27 @@
 				</div>
 			</div>
 			<div class="login">
-				<div class="login__header">
-					<p class="login__title">Sign In</p>
-					<div class="login__exit"></div>
+				<div class="login__body">
+					<div class="login__header">
+						<p class="login__title">Sign In</p>
+						<svg class="login__exit" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="cross"><line class="cls-1" x1="7" x2="25" y1="7" y2="25"/><line class="cls-1" x1="7" x2="25" y1="25" y2="7"/></g></svg>
+					</div>
+					<form action="logged.html" class="login__form">
+						<input type="text" class="login__field" placeholder="Login" required pattern="(?=.*[a-zA-Z0-9]).{8,30}">
+						<div class="login__requirements">Must be at least 8 charachers (latin letters or numbers)</div>
+						<input type="password" class="login__field" placeholder="Password" required pattern="(?=.*[a-zA-Z0-9]).{5,30}">
+						<div class="login__requirements">Must be at least 5 characters (latin letters or numbers)</div>
+						<input type="submit" class="login__btn" value="Sign in">
+					</form>
 				</div>
-				<form action="logged.html" class="login__form">
-					<input type="text" class="login__field" id="login__fieldFirst" placeholder="Login" required pattern="(?=.*[a-zA-Z0-9]).{8,}">
-					<div class="login__requirements">Must be at least 8 charachers (latin letters or numbers)</div>
-					<input type="password" class="login__field" id="login__field--second" placeholder="Password" required pattern="(?=.*[a-zA-Z0-9]).{5,}">
-					<div class="login__requirements">Must be at least 5 characters (latin letters or numbers)</div>
-					<input type="submit" class="login__btn" value="Sign in">
-				</form>
 			</div>
 			<div class="intro">
-				<div class="intro__title">
+				<p class="intro__title">
 					Be aware, <br> Manage well.
-				</div>
-				<p class="intro__desc">
-					Everyone experiences stress in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.
 				</p>
+				<div class="intro__desc">
+					Everyone experiences stress in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.
+				</div>
 					<button class="intro__btn">Find Your Way</button>
 			</div>
 			<div class="about">
@@ -100,7 +102,7 @@
 						<button class="story__btn">Let’s get started</button>
 				</div>
 				<div class="story__promo">
-					<iframe class="story__video" src="https://www.youtube.com/embed/aDeNQNtW1f8?hl=en" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe class="story__video" src="https://www.youtube.com/embed/aDeNQNtW1f8?hl=en" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 			<div class="product">
@@ -147,7 +149,7 @@
 					<a href="#" class="footer__nav">Pricing</a>
 				</div>
 			</div>
-	</div>
-	<script src="js/main.js"></script>
-</body>
+	    </div>
+		<script src="js/main.js"></script>
+	</body>
 </html>

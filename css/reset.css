@@ -64,3 +64,9 @@ input::-ms-clear{display: none;}
 
 button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
+
+svg path {
+fill:inherit;
+stroke:inherit;
+stroke-width:inherit;
+}
