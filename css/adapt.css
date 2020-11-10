@@ -296,8 +296,8 @@
 		margin: 0 0 0 0;
 	}
 	.login{
-		transform: translateX(1200px);
-		display: none;
+/*		transform: translateX(1200px);
+		display: none;*/
 	}
 	.login__body{
 		width: 45%;
@@ -409,8 +409,8 @@
 		transform: translateX(425px);
 	}
 	.login{
-		transform: translateX(700px);
-		padding: 10px 20px 10px 20px;
+/*		transform: translateX(700px);
+		padding: 10px 20px 10px 20px;*/
 	}
 	.login__body{
 		width: 100%;

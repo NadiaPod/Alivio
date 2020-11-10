@@ -50,6 +50,7 @@ body.shown{
 
 .header__menu{
 	display: flex;
+	overflow-y: auto;
 	justify-content: space-between;
 	align-items: center;
 	width: calc(100% - 150px);
@@ -144,22 +145,17 @@ body.shown{
 	position:fixed;
 	top: 0;
 	left: 0;
-    /*display: flex;*/
+    display: none;
     width: 100vw;
     height: 100vh;
   	justify-content: center;
     align-items: center;
     background: rgba(0,0,0,0.4);
     z-index: 20;
-    transform: translateX(100%);
-    transition: all .2s linear;
-
 }
 
 .login.active{
 	display: flex;
-	transform: translateX(0);
-	transition: all .2s linear;
 }
 
 .login__body{
@@ -528,7 +524,7 @@ body.shown{
 }
 
 .product__caption{
-	font: 700 calc(11px + 4 * ((100vw - 320px) / (1920 - 320))) /23px var(--Lato);
+	font: 700 calc(13px + 4 * ((100vw - 320px) / (1920 - 320))) /23px var(--Lato);
 	text-align: center;
 }
 
@@ -543,12 +539,13 @@ body.shown{
 
 .product__photo{
 	border-radius: 50%;
+	width: 55%;
 	display: block;
 	margin: 10px auto;
 }
 
 .product__first-name{
-	font: 700 calc(8px + 4 * ((100vw - 320px) / (1920 - 320))) /19px var(--Lato);
+	font: 700 calc(12px + 4 * ((100vw - 320px) / (1920 - 320))) /19px var(--Lato);
 	text-align: center;
 }
 
@@ -563,7 +560,7 @@ body.shown{
 }
 
 .product__item{
-	font: 400 calc(8px + 3 * ((100vw - 320px) / (1920 - 320))) /17px var(--Lato);
+	font: 400 calc(12px + 3 * ((100vw - 320px) / (1920 - 320))) /17px var(--Lato);
 	margin: 0 0 15px 0;
 }
 
