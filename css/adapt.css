@@ -252,48 +252,30 @@
 @media (max-width: 768px) {
 	.header{
 		padding: 20px 40px;
-		position: relative;
+		/*position: relative;*/
+	}
+	.header__navs, .header__auth{
+		display: none;
 	}
 	.header__burger{
 		display: block;
 	}
-	.header__menu{
-		position: fixed;
- 		background-color: #fff;
- 		transform: translateX(1200px);
-		transition: all .17s linear;
- 		top: 0;
- 		left: 0;
- 		padding: 20px 35px;
- 		display: flex;
- 		flex-direction: column;
- 		box-shadow: 0 0 10px rgba(0,0,0,0.2);
- 		width: 250px;
- 		height: 100vh;
+	.drawer{
+		transform: translateX(1200px);
 	}
-	.header__menu.shown{
- 		transform: translateX(770px);
- 		transition: all .17s linear;
-	}
-	.header__navs{
-		display: flex;
- 		flex-direction: column;
- 		margin: 0 0 30px 0;
- 		text-align: center;
-	}
-	.header__auth{
-		display: flex;
- 		flex-direction: column;
- 		text-align: center;
-	}
-	.header__sign-in{
-		margin: 0 0 30px 0;
+	.drawer.shown{
+ 		transform: translateX(768px);
+ 		transition: transform .17s linear;
 	}
 	.header__nav{
 		margin: 0 0 30px 0;
 	}
-	.header__nav:last-child{
-		margin: 0 0 0 0;
+	.header__sign-in--mobile{
+		margin: 0 0 30px 0;
+		line-height: 24px;
+	}
+	.header__btn--mobile{
+		line-height: 24px;
 	}
 	.login{
 /*		transform: translateX(1200px);
@@ -393,19 +375,7 @@
 	.header{
 		padding: 20px 25px;
 	}
-	.header__menu{
-		position: fixed;
- 		background-color: #fff;
- 		top: 0;
- 		left: 0;
- 		transform: translateX(800px);
- 		padding: 20px 35px;
- 		display: flex;
- 		flex-direction: column;
- 		box-shadow: 0 0 10px rgba(0,0,0,0.2);
- 		width: 250px;
-	}
-	.header__menu.shown{
+	.header__navs.shown{
 		transform: translateX(425px);
 	}
 	.login{
@@ -530,19 +500,7 @@
 	.header{
 		padding: 20px 20px;
 	}
-	.header__menu{
-		position: fixed;
- 		background-color: #fff;
- 		top: 0;
- 		left: 0;
- 		transform: translateX(500px);
- 		padding: 20px 35px;
- 		display: flex;
- 		flex-direction: column;
- 		box-shadow: 0 0 10px rgba(0,0,0,0.2);
- 		width: 250px;
-	}
-	.header__menu.shown{
+	.header__navs.shown{
 		transform: translateX(375px);
 	}
 	.intro{
@@ -630,19 +588,7 @@
 	.header{
 		padding: 20px 15px;
 	}
-	.header__menu{
-		position: fixed;
- 		background-color: #fff;
- 		top: 0;
- 		left: 0;
- 		transform: translateX(400px);
- 		padding: 20px 35px;
- 		display: flex;
- 		flex-direction: column;
- 		box-shadow: 0 0 10px rgba(0,0,0,0.2);
- 		width: 250px;
-	}
-	.header__menu.shown{
+	.header__navs.shown{
 		transform: translateX(320px);
 	}
 	.intro{

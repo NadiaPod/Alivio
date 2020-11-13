@@ -21,11 +21,11 @@ body.shown{
 .container{
 	max-width: 1920px;
 	margin: 0 auto;
-	transition: transform .2s;
+	transition: transform .2s, -webkit-transform .2s;
 }
 
 .container.shown{
-	transform: translate(-250px);
+	transform: translateX(-250px);
 	-webkit-transform: translate(-250px);
 }
 
@@ -46,14 +46,6 @@ body.shown{
 .header__logo{
 	font: 28px /55px 'Avenir';
 	color: var(--green-color);
-}
-
-.header__menu{
-	display: flex;
-	overflow-y: auto;
-	justify-content: space-between;
-	align-items: center;
-	width: calc(100% - 150px);
 }
 
 .header__burger{
@@ -131,7 +123,7 @@ body.shown{
 .header__btn{
 	background-color: var(--green-color);
 	color: #fff;
-	font: 400 calc(14px + 6 * ((100vw - 320px) / (1920 - 320))) /50px var(--Lato);
+	font: 400 20px /50px var(--Lato);
 	border-radius: 4px;
 	padding: 0 50px;
 }
@@ -139,6 +131,42 @@ body.shown{
 .header__btn:hover{
 	background-color: var(--hover-green);
 	transition: background-color .15s linear;
+}
+
+.drawer{
+	background-color: #fff;
+	transition: transform .17s linear;
+ 	transform: translateX(6000px);
+ 	position: fixed;
+ 	width: 250px;
+ 	height: 100vh;
+ 	top: 0;
+ 	left: 0;
+ 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+ 	padding: 30px 15px;
+ 	z-index: 10;
+ 	overflow-y: auto;
+}
+
+.drawer.shown{
+	transform: translateX(100vw);
+}
+
+.drawer__navs, .drawer__auth{
+	display: flex;
+ 	flex-direction: column;
+}
+
+.drawer__nav, .drawer__sign-in, .drawer__btn{
+	background-color: #fff;
+	font: 400 20px /24px var(--Lato);
+	color: var(--grey-color);
+	margin: 0 0 30px 0;
+	line-height: 24px;
+}
+
+.drawer__sign-in, .drawer__btn{
+	text-align: left;
 }
 
 .login{
@@ -312,7 +340,7 @@ body.shown{
 .intro__btn{
 	background-color: var(--green-color);
 	color: #fff;
-	font: 400 calc(14px + 6 * ((100vw - 320px) / (1920 - 320))) /55px var(--Lato);
+	font: 400 calc(14px + 6 * ((100vw - 320px) / (1920 - 320))) /75px var(--Lato);
 	border-radius: 4px;
 	padding: 0 50px;
 }
@@ -331,6 +359,7 @@ body.shown{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .about__title{
@@ -343,19 +372,17 @@ body.shown{
 	margin: 0 0 20px 0;
 }
 
-.about__desc{
-	max-width: 671px;
-}
-
 .about__desc-text{
 	font: 400 calc(14px + 6 * ((100vw - 320px) / (1920 - 320))) /30px var(--Lato);
 	padding: 50px 0 0 0;
 	color: var(--grey-color);
+	max-width: 671px;
 }
 
 .about__example{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .about__item--second{
@@ -449,10 +476,10 @@ body.shown{
 }
 
 .story__btn{
-	font: 400 calc(14px + 6 * ((100vw - 320px) / (1920 - 320))) /25px var(--Lato);
+	font: 400 calc(16px + 4 * ((100vw - 320px) / (1920 - 320))) /75px var(--Lato);
 	background-color: var(--green-color);
 	color: #fff;
-	padding: 20px 50px;
+	padding: 0 50px;
 	border-radius: 4px;
 }
 
@@ -590,9 +617,9 @@ body.shown{
 .product__btn{
 	background-color: var(--green-color);
 	color: #fff;
-	font: 400 calc(14px + 6 * ((100vw - 320px) / (1920 - 320))) var(--Lato);
+	font: 400 calc(14px + 6 * ((100vw - 320px) / (1920 - 320))) /75px var(--Lato);
 	border-radius: 4px;
-	padding: 20px 50px;
+	padding: 0 50px;
 }
 
 .product__btn:hover{
