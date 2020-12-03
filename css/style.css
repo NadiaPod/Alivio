@@ -659,3 +659,118 @@ body.shown{
 	color: #989898;
 	transition: color .15s linear;
 }
+
+.contacts{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.contacts__inner{
+	padding: 20px 30px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	border-radius: 16px;
+	height: 60%;
+	width: 50%;
+}
+
+.contacts__header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 20px 0;
+}
+
+.contacts__info{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80%;
+}
+
+.contacts__title{
+	font: 700 calc(20px + 8 * ((100vw - 320px) / (1920 - 320))) /34px var(--Georgia);
+	color: #01996D;
+}
+
+.contacts__exit{
+	width: 30px;
+	fill: none;
+	stroke: var(--grey-color);
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-width: 2px;
+	transition: stroke .15s linear;
+}
+
+.contacts__exit:hover{
+	cursor: pointer;
+	stroke: var(--green-color);
+}
+
+.contacts__items{
+	display: flex;
+	flex-direction: column;
+}
+
+.contacts__item{
+	display: flex;
+	align-items: center;
+	margin: 0 0 25px 0;
+}
+
+.contacts__item:last-child{
+	margin: 0 0 0 0;
+}
+
+.contacts__img{
+	width: 7%;
+	margin: 0 10px 0 0;
+}
+
+.contacts__caption{
+	font: 400 calc(18px + 5 * ((100vw - 320px) / (1920 - 320))) /30px var(--Lato);
+	color: var(--grey-color);
+}
+
+.contacts__map{
+	width: 85%;
+	height: 80%;
+}
+
+.contacts.shown{
+	display: flex;
+}
+
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar{
+	border: 0;
+}
+
+.leaflet-touch .leaflet-bar a{
+	line-height: 37px;
+}
+
+.leaflet-touch .leaflet-bar a:first-child,.leaflet-touch .leaflet-bar a:last-child{
+	border-radius: 50%;
+	width: 37px;
+	height: 37px;
+	border: 1px solid var(--green-color);
+}
+
+.leaflet-touch .leaflet-bar a:first-child{
+	margin: 0 0 5px 0;
+}
+
+.leaflet-control-attribution{
+	display: none;
+}

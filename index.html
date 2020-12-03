@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/tabicon.png" type="image/png">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<!-- <link rel="stylesheet" href="css/adapt.css"> -->
-	<link rel="stylesheet" href="css/adaptive.css">
+	<link rel="stylesheet" href="css/leaflet.css">
+	<link rel="stylesheet" href="css/reset.css?v=2">
+	<link rel="stylesheet" href="css/style.css?v=2">
+	<link rel="stylesheet" href="css/adaptive.css?v=2">
 	<title>Надя</title>
 </head>
 <body>
@@ -21,10 +21,10 @@
 						<a href="#" class="header__nav">Why Alivio</a>
 						<a href="#" class="header__nav">Solutions</a>
 						<a href="#" class="header__nav">Community</a>
-						<a href="#" class="header__nav">Pricing</a>
+						<a href="#" class="header__nav" id="contact">Contacts</a>
 					</div>
 					<div class="header__auth">
-						<button class="header__sign-in">Sign in</button>
+						<button class="header__sign-in" id="signIn">Sign in</button>
 						<button class="header__btn">Start Trial</button>
 					</div>
 			</div>
@@ -33,10 +33,10 @@
 					<a href="#" class="drawer__nav">Why Alivio</a>
 					<a href="#" class="drawer__nav">Solutions</a>
 					<a href="#" class="drawer__nav">Community</a>
-					<a href="#" class="drawer__nav">Pricing</a>
+					<a href="#" class="drawer__nav" id="contact">Contacts</a>
 				</div>
 				<div class="drawer__auth">
-					<button class="drawer__sign-in">Sign in</button>
+					<button class="drawer__sign-in" id="signIn">Sign in</button>
 					<button class="drawer__btn">Start Trial</button>
 				</div>
 			</div>
@@ -53,6 +53,31 @@
 						<div class="login__requirements">Must be at least 5 characters (latin letters or numbers)</div>
 						<input type="submit" class="login__btn" value="Sign in">
 					</form>
+				</div>
+			</div>
+			<div class="contacts">
+				<div class="contacts__inner">
+					<div class="contacts__header">
+						<div class="contacts__title">Contacts</div>
+						<svg class="contacts__exit" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="cross"><line class="cls-1" x1="7" x2="25" y1="7" y2="25"></line><line class="cls-1" x1="7" x2="25" y1="25" y2="7"></line></g></svg>
+					</div>
+					<div class="contacts__info">
+						<div class="contacts__items">
+							<div class="contacts__item">
+								<img class="contacts__img" src="img/contacts/027-location.svg" alt="">
+								<p class="contacts__caption">Vitebsk, Pravdy Street, 63A</p>
+							</div>
+							<div class="contacts__item">
+								<img class="contacts__img" src="img/contacts/043-telephone.svg" alt="">
+								<a href="tel:+375257550837" class="contacts__caption">+375(25)755-08-37</a>
+							</div>
+							<div class="contacts__item">
+								<img src="img/contacts/038-send.svg" alt="" class="contacts__img">
+								<a href="mailto:nadiapodkovyrova@gmail.com" class="contacts__caption">alivio@company.com</a>
+							</div>
+						</div>
+						<div class="contacts__map" id="mapid"></div>
+					</div>
 				</div>
 			</div>
 			<div class="intro">
@@ -153,10 +178,11 @@
 					<a href="#" class="footer__nav">Why Alivio</a>
 					<a href="#" class="footer__nav">Solutions</a>
 					<a href="#" class="footer__nav">Community</a>
-					<a href="#" class="footer__nav">Pricing</a>
+					<a href="#" id="contact" class="footer__nav">Contacts</a>
 				</div>
 			</div>
 	    </div>
+		<script src="js/leaflet.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
